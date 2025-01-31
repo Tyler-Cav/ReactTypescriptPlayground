@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom'
+import ButtonToPath from "../Components/ButtonToPath.tsx";
 
 export default function Home() {
     return(
         <>
-            <Link to='/test'>Go to Test Path</Link>
-            <p> Yup this is home.</p>
+            <nav className={'test-nav'}>
+                <ButtonToPath path={'/test'} text={"Go To Test"}/>
+                <p> Yup this is home.</p>
+            </nav>
         </>
     )
 }
