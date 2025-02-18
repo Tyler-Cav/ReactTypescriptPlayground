@@ -2,6 +2,7 @@ import ButtonToPath from "../Components/ButtonToPath.tsx";
 import Card from "../Components/Card.tsx"
 import style from "../Components/style.module.scss"
 import '../Styling/test-page.css'
+import ToggleSlider from "../Components/ToggleButton.tsx"
 
 export default function Test() {
     return(
@@ -14,6 +15,7 @@ export default function Test() {
                 <ButtonToPath customStyle={style.testStyle}  path={'/'} text={"GO HOME"}/>
             </nav>
             <Card/>
+            <ToggleSlider label="test"/>
         </>
     )
 }
