@@ -16,16 +16,14 @@ let Style: object = {
 
 const testClick = (e: React.MouseEvent<HTMLButtonElement>) => {
   console.log(e.currentTarget.textContent);
-
-  // Create a new div element
   const newDiv = document.createElement("div");
   const thisCardEl: HTMLElement | null = document.getElementById("hello");
   newDiv.textContent = "New div added!";
   newDiv.style.cssText =
     "background-color: lightblue; padding: 5px; margin: 2px; border-radius: 3px;";
-
-  // Append the div to the button
-  thisCardEl.appendChild(newDiv);
+  if (thisCardEl != null) {
+    thisCardEl.appendChild(newDiv);
+  }
 };
 
 export default function Card() {
